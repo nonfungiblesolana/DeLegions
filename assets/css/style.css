@@ -366,11 +366,11 @@ header .logo img {
     display: flex;
     align-items: center;
     border-radius: 4px;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 0.875rem;
     line-height: 1.75;
     color: #0f0f0f;
-    height: 100px;
+    height: 50px;
     cursor: pointer;
     transition-duration: 0.3s;
     justify-content: center !important;
@@ -387,11 +387,11 @@ header .logo img {
     display: flex;
     align-items: center;
     border-radius: 4px;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 0.875rem;
     line-height: 1.75;
     color: #0f0f0f;
-    height: 100px;
+    height: 50px;
     cursor: pointer;
     transition-duration: 0.3s;
     justify-content: center !important;
@@ -399,6 +399,7 @@ header .logo img {
     margin-top: 20px;
     margin-bottom: 10px;
     transition: 0.5s;
+
 }
 
 
