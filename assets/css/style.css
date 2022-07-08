@@ -115,7 +115,7 @@ header .logo img {
     background-color: #0f0f0f;
     padding: 40px 30px;
     backdrop-filter: blur(10px);
-    border-radius: 0px;
+    border-radius: 4px;
 }
 
 .left-title {
