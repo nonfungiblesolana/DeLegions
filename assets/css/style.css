@@ -360,19 +360,19 @@ header .logo img {
     align-items: center;
 }
 #root button {
-    font-family: Bebas Neue;
-    text-transform: uppercase;
     position: relative;
     display: flex;
     align-items: center;
     border-radius: 4px;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 0.875rem;
     line-height: 1.75;
     color: #0f0f0f;
+    padding: 12px 16px;
     height: 50px;
     cursor: pointer;
     transition-duration: 0.3s;
+    letter-spacing: 0.5px;
     justify-content: center !important;
     background: #fff;
     margin-top: 20px;
@@ -381,25 +381,11 @@ header .logo img {
 }
 
 #root button:hover {
-    font-family: Bebas Neue;
-    text-transform: uppercase;
-    position: relative;
-    display: flex;
-    align-items: center;
-    border-radius: 4px;
-    font-weight: 300;
-    font-size: 0.875rem;
-    line-height: 1.75;
-    color: #0f0f0f;
-    height: 50px;
-    cursor: pointer;
-    transition-duration: 0.3s;
-    justify-content: center !important;
-    background: #fff;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    background: #fff !important;
+    color: #000;
+    backdrop-filter: blur(10px);
+    transform: scale(1.1);
     transition: 0.5s;
-
 }
 
 
@@ -436,23 +422,6 @@ header .logo img {
     }
     #root button {
         padding: 0px 25px;
-        font-family: Bebas Neue;
-    text-transform: uppercase;
-    position: relative;
-    display: flex;
-    align-items: center;
-    border-radius: 0px;
-    font-weight: 600;
-    font-size: 2.25rem;
-    line-height: 32px;
-    color: #0f0f0f;
-    height: 100px;
-    cursor: pointer;
-    transition-duration: 0.3s;
-    justify-content: center !important;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    transition: 0.5s;
     }
     .main-screen{
         width: 95%;
