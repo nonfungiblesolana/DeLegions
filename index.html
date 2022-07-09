@@ -38,6 +38,55 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        var initialValue = 244;
+        $(document).ready(function() {
+          var counter = localStorage.getItem("counter");
+          var canCount = true;
+          var id;
+          if (counter) {
+            $("span#count").html(counter);
+          } else {
+            localStorage.setItem("counter", initialValue);
+            counter = initialValue;
+            $("span#count").html(initialValue);
+          }
+     
+          function startTimer() {
+            if (localStorage.getItem("counter") && id === undefined) {
+              id = setInterval(function() {
+                if (canCount) {
+                  localStorage.setItem("counter", --counter);
+                  span = document.getElementById("count");
+                  span.innerHTML = counter;
+                  if (counter <= 0) {
+                    localStorage.removeItem("counter")
+                    clearInterval(id);
+                    id = undefined;
+                  }
+                }
+              }, 1000);
+            }
+          }
+     
+          $("#startClock").click(startTimer);
+     
+          $("#restartClock").click(function(){
+             counter = initialValue;
+             localStorage.setItem("counter", counter);
+             $("span#count").html(counter);
+          });
+     
+          $("#pauseClock").click(function() {
+            $(this).html(canCount?"Continue Clock":"Pause Clock");
+            canCount = !canCount;
+          });
+        });
+     
+      </script>
+
+
     <script>
         window.addEventListener('click', () => {
             document.getElementById('showcase__btn0').addEventListener('click', function(e) {
