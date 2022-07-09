@@ -112,13 +112,13 @@ header .logo img {
     background-color: #0f0f0f;
     padding: 40px 30px;
     backdrop-filter: blur(10px);
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 .price {
     background: rgb(21, 26, 31);
     padding: 24px 24px 10px;
-    border-radius: 6px;
+    border-radius: 8px;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -139,11 +139,11 @@ header .logo img {
 .price-list li {
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 12px;
 }
 
 .price-list li .text {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
     margin-bottom: 10px;
 }
@@ -425,7 +425,7 @@ header .logo img {
     position: relative;
     display: flex;
     text-transform: uppercase;
-    width: 340px;
+    width: 348px;
     justify-content: center!important;
     align-items: center;
     background: linear-gradient( rgb(96, 74, 229) 0%, rgb(129, 62, 238) 100%)!important;
@@ -468,7 +468,7 @@ header .logo img {
     font-size: 18px;
     background: #384457;
     height: 3rem;
-    width: 130px;
+    width: 165px;
     align-items: center;
     font-weight: bold;
     margin-right: 0;
