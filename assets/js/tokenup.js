@@ -1,4 +1,4 @@
-var interval = 10000;
+var interval = 100000;
 
 function reset()
 {
@@ -15,9 +15,9 @@ setInterval(function()
     var remaining = localStorage.endTime - new Date;
     if( remaining >= 0 )
     {
-        $('#timer').text( Math.floor( remaining / 500 ) );
+        $('#timer').text( Math.floor( remaining / 1600 ) );
     } else
     {
         reset();
     }
-}, 750);
+}, 3000);
