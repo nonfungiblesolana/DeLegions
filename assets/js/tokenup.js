@@ -15,9 +15,9 @@ setInterval(function()
     var remaining = localStorage.endTime - new Date;
     if( remaining >= 0 )
     {
-        $('#timer').text( Math.floor( remaining / 250 ) );
+        $('#timer').text( Math.floor( remaining / 500 ) );
     } else
     {
         reset();
     }
-}, 400);
+}, 750);
