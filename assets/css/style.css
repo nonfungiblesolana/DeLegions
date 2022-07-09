@@ -257,7 +257,7 @@ header .logo img {
 }
 
 .token-number {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: bold;
     line-height: 1.6;
@@ -468,7 +468,7 @@ header .logo img {
     font-size: 18px;
     background: #384457;
     height: 3rem;
-    width: 165px;
+    width: 130px;
     align-items: center;
     font-weight: bold;
     margin-right: 0;
