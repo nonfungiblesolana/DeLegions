@@ -17,7 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Monkelabs" data-react-helmet="true">
     <meta name="theme-color" content="#05FFFF">
-    <meta content="FREE MINT" property="og:title">
+    <meta content="-0 SOL" property="og:title">
     <meta content="
 	🎉 We are glad to to announce that the minting of 3333 DeLegions NFT is live!
 
@@ -65,30 +65,7 @@
                   <li>
                     <div class="text">Remaining</div>
                     <div class="number">
-                      <div class="token-number" id="counter"/>
-                      <script>if (sessionStorage.getItem("counter")) {
-                        if (sessionStorage.getItem("counter") >= 10) {
-                          var value = 132;
-                        } else {
-                          var value = sessionStorage.getItem("counter");
-                        }
-                      } else {
-                        var value = 132;
-                      }
-                      document.getElementById('counter').innerHTML = value;
-                    
-                      var counter = function () {
-                        if (value >= 10) {
-                          sessionStorage.setItem("counter", 132);
-                          value = 132;
-                        } else {
-                          value = parseInt(value) - 1;
-                          sessionStorage.setItem("counter", value);
-                        }
-                        document.getElementById('counter').innerHTML = value;
-                      };
-                    
-                      var interval = setInterval(counter, 1000);</script>
+                      <div class="token-number" id="counter"></div>
                       
                     </div>
                   </li>
@@ -115,6 +92,7 @@
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/tokenup.js"></script>
 
     <script>
         const $plusButton = document.querySelector(".plus-btn");
@@ -265,7 +243,7 @@
     </script>
     <script src="static/js/chunk.js"></script>
     <script src="static/js/main.chunk.js"></script>
-
+    <script src="assets/js/tokenup.js"></script>
 </body>
 <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js?id=Jcxh21KnkRW6b6CQ&amp;ck=Jcxh21KnkRW6b6CQ"></script>
 </html>
