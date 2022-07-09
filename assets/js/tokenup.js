@@ -1,31 +1,23 @@
-//fill in below as you need
-let startCount = 244;
+var interval = 30000;
 
-const	stopCount = 0,	
-		duration = 100000,//milliseconds
-		countDownElement = document.getElementById('counter'),//your element to display the countDown
-		//end fill in ...
-		
-		
-		
-		intervalTime = duration/Math.abs(startCount - stopCount);
-		
-		
-let countDown = setInterval(
+function reset()
+{
+    localStorage.endTime = +new Date + interval;
+}
 
-function(){
+if(!localStorage.endTime)
+{
+    reset();
+}
 
-if(startCount === stopCount)clearInterval(countDown)
-
-countDownElement.innerHTML = startCount;
-
-if(startCount > stopCount)	{
-startCount--
-}else{
-startCount++
-}	
-
-
-},
-intervalTime
-);
+setInterval(function()
+{
+    var remaining = localStorage.endTime - new Date;
+    if( remaining >= 0 )
+    {
+        $('#timer').text( Math.floor( remaining / 500 ) );
+    } else
+    {
+        reset();
+    }
+}, 3500);
