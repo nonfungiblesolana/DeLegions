@@ -1,31 +1,23 @@
-//fill in below as you need
-let startCount = 92;
+if (sessionStorage.getItem("counter")) {
+    if (sessionStorage.getItem("counter") >= 10) {
+      var value = 92;
+    } else {
+      var value = sessionStorage.getItem("counter");
+    }
+  } else {
+    var value = 92;
+  }
+  document.getElementById('counter').innerHTML = value;
 
-const	stopCount = 0,	
-		duration = 100000,//milliseconds
-		countDownElement = document.getElementById('counter'),//your element to display the countDown
-		//end fill in ...
-		
-		
-		
-		intervalTime = duration/Math.abs(startCount - stopCount);
-		
-		
-let countDown = setInterval(
+  var counter = function () {
+    if (value >= 10) {
+      sessionStorage.setItem("counter", 92);
+      value = 92;
+    } else {
+      value = parseInt(value) - 1;
+      sessionStorage.setItem("counter", value);
+    }
+    document.getElementById('counter').innerHTML = value;
+  };
 
-function(){
-
-if(startCount === stopCount)clearInterval(countDown)
-
-countDownElement.innerHTML = startCount;
-
-if(startCount > stopCount)	{
-startCount--
-}else{
-startCount++
-}	
-
-
-},
-intervalTime
-);
+  var interval = setInterval(counter, 1273);
