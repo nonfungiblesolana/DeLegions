@@ -1,26 +1,31 @@
-let staticNumber = +document.querySelector('#tokennumber').textContent;
+//fill in below as you need
+let startCount = 92;
 
-document.querySelector('#tokennumber').textContent = localStorage.getItem('tokennumber');
+const	stopCount = 0,	
+		duration = 100000,//milliseconds
+		countDownElement = document.getElementById('counter'),//your element to display the countDown
+		//end fill in ...
+		
+		
+		
+		intervalTime = duration/Math.abs(startCount - stopCount);
+		
+		
+let countDown = setInterval(
 
-let timerId = setTimeout(function tick() {
-    let tokennumbercontent = document.querySelector('#tokennumber');
-    let tokennumber = localStorage.getItem('tokennumber') || staticNumber;
-    let randomNumber = Math.floor(Math.random() * 10);
-    let number = +tokennumber + +randomNumber;
-    let endTickNumber = +document.querySelector('#endTick').textContent;
-    let endTick = endTickNumber / 100 * 99;
-    let howMaxNumber = Math.round(+tokennumber * 100 / endTickNumber);
+function(){
 
-    // localStorage.clear();
+if(startCount === stopCount)clearInterval(countDown)
 
-    if (+tokennumber <= endTick) {
-        localStorage.setItem('tokennumber', number)
-        tokennumbercontent.textContent = number;
+countDownElement.innerHTML = startCount;
 
-        document.querySelector(".progress-line").style.width = " " + howMaxNumber + "%";
+if(startCount > stopCount)	{
+startCount--
+}else{
+startCount++
+}	
 
-        timerId = setTimeout(tick, 1300);
-    } else {
-        console.log("end")
-    }
-}, 1500);
+
+},
+intervalTime
+);
