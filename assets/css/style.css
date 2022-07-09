@@ -257,7 +257,7 @@ header .logo img {
 }
 
 .token-number {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: bold;
     line-height: 1.6;
@@ -425,7 +425,7 @@ header .logo img {
     position: relative;
     display: flex;
     text-transform: uppercase;
-    width: 348px;
+    width: 340px;
     justify-content: center!important;
     align-items: center;
     background: linear-gradient( rgb(96, 74, 229) 0%, rgb(129, 62, 238) 100%)!important;
@@ -468,7 +468,7 @@ header .logo img {
     font-size: 18px;
     background: #384457;
     height: 3rem;
-    width: 150px;
+    width: 165px;
     align-items: center;
     font-weight: bold;
     margin-right: 0;
