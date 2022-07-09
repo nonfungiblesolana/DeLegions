@@ -1,5 +1,5 @@
 //fill in below as you need
-let startCount = 132;
+let startCount = 244;
 
 const	stopCount = 0,	
 		duration = 100000,//milliseconds
